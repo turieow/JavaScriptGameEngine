@@ -101,7 +101,7 @@ class Actor extends EventDispatcher {
 		return this.tags.includes(tagName);
 	}
 
-	pawnActor(actor) {
+	spawnActor(actor) {
 		this.dispatchEvent('spawnactor', new GameEvent(actor));
 	}
 
